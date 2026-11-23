@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Configuração central da URL do back-end em Spring Boot
 const api = axios.create({
-  baseURL: 'http://localhost:8081/api'
+  baseURL: 'https://amigopet-2hku.onrender.com'
 });
 
 export default api;
