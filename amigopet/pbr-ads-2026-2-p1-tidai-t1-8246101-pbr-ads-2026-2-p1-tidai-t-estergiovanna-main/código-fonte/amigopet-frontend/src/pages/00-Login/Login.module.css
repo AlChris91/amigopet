@@ -1,0 +1,123 @@
+.container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.logo {
+  width: 62px;
+  height: 62px;
+  color: var(--brand-primary);
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--brand-ink);
+  font-size: 36px;
+  margin: 0;
+}
+
+.titulo span {
+  color: var(--brand-primary);
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.btnAcao {
+  background-color: var(--brand-primary);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btnAcao:hover {
+  background-color: var(--brand-primary-dark);
+}
+
+.alternarContainer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.btnLink {
+  background: none;
+  border: none;
+  color: var(--brand-ink);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  .content {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}

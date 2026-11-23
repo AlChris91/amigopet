@@ -1,0 +1,213 @@
+.container {
+  background-color: #f4f9f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboardHeader {
+  background-color: var(--brand-ink);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.dashboardHeader h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.dashboardHeader p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.secaoTitulo {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.filaLista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.petCard {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.petInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.badgePosicao {
+  background-color: var(--brand-soft);
+  color: var(--brand-ink);
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.petNome {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.detalhesAtendimento {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.acoesGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btnChamar {
+  background-color: var(--brand-primary);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btnChamar:hover {
+  background-color: var(--brand-primary-dark);
+}
+
+.btnRemover {
+  background-color: #f44336; /* Vermelho para cancelamento/remover */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btnRemover:hover {
+  background-color: #d32f2f;
+}
+
+.filaVazia {
+  text-align: center;
+  color: #777;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px dashed #ccc;
+}
+.abasContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.abaBtn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+}
+
+.abaAtiva {
+  background-color: #1a237e;
+  color: #fff;
+  border-color: #1a237e;
+}
+
+.acoesGrupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btnConcluir {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btnRecusar {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #e0e0e0;
+  color: #333;
+  margin-top: 5px;
+}
+
+@media (min-width: 900px) {
+  .content {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 32px 40px;
+    box-sizing: border-box;
+  }
+
+  .filaLista {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 16px;
+  }
+}

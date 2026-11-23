@@ -1,0 +1,16 @@
+.mapaContainer {
+  width: 100%;
+  height: 250px; /* Altura ideal para simular a tela de um celular */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+  .mapaContainer {
+    height: min(60vh, 560px);
+    min-height: 420px;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,125 @@
+.container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardResumo {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tituloSecao {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.clinicaNome {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--brand-ink);
+  margin: 0 0 15px 0;
+}
+
+.detalheItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee;
+  font-size: 15px;
+}
+
+.detalheItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.label {
+  color: #555;
+}
+
+.valor {
+  font-weight: bold;
+  color: #333;
+}
+
+.alertaBox {
+  background-color: #fffde7; /* Amarelo para alertas conforme identidade visual */
+  border: 1px solid #fff59d;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alertaTitulo {
+  font-weight: bold;
+  color: #f57f17;
+  font-size: 15px;
+  margin: 0;
+}
+
+.alertaTexto {
+  color: #5d4037;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.btnConfirmar {
+  background-color: var(--brand-primary);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(22, 183, 164, 0.2);
+  margin-top: auto; /* Empurra o botão para o final da tela */
+  transition: background-color 0.2s;
+}
+
+.btnConfirmar:hover {
+  background-color: var(--brand-primary-dark);
+}
+
+@media (min-width: 900px) {
+  .content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: center;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .btnConfirmar {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, 420px);
+    margin-top: 8px;
+  }
+}

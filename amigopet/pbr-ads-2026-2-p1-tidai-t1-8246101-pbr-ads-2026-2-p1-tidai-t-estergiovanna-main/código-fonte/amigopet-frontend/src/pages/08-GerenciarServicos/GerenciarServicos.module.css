@@ -1,0 +1,112 @@
+.container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cardForm {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.subtitulo {
+  font-size: 18px;
+  color: #1a237e;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 13px;
+  color: #333;
+  font-weight: bold;
+}
+
+.input, .select, .textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.btnAdicionar {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.btnAdicionar:hover {
+  opacity: 0.9;
+}
+
+.cardLista {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.servicoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.servicoItem:last-child {
+  border-bottom: none;
+}
+
+.servicoInfo h4 {
+  margin: 0 0 4px 0;
+  color: #333;
+}
+
+.servicoInfo p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.servicoPreco {
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 15px;
+}

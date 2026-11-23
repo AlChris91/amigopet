@@ -1,0 +1,13 @@
+schema: "classroom50/repo-config/v1"
+classroom: "pbr-ads-2026-2-p1-tidai-t1-8246101"
+assignment: "pbr-ads-2026-2-p1-tidai-t"
+secret: "ctncwrad"
+owner:
+  username: "estergiovanna"
+  id: 126531085
+  accepted_at: "2026-09-24T01:07:51Z"
+source:
+  owner: "ICEI-PUC-Minas-PBR-ADS"
+  owner_id: 166877437
+  repo: "TIDAI-Template"
+  branch: "main"
